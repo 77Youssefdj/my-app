@@ -1,5 +1,5 @@
 import React from 'react';
-
+import astronaute from './images/astronaute.png';
 const About: React.FC = () => {
   return (
     <div> 
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className="lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
-          <img src="/astronaute.png" alt="Astronaut with laptop" className="max-w-full h-auto" />
+          <img src={astronaute} alt="Astronaut with laptop" className="max-w-full h-auto" />
         </div>
       </div>
     </div>
