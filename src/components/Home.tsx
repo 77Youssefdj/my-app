@@ -1,4 +1,5 @@
 import React from 'react';
+import idphoto from './images/your-photo.jpg';
 
 const Home: React.FC = () => {
   const handleScrollDown = () => {
@@ -20,7 +21,7 @@ const Home: React.FC = () => {
         </div>
         <div className="photo flex-none ml-48">
           <img 
-            src="/your-photo.jpg" 
+            src={idphoto}
             alt="Y" 
             className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-md"
           />

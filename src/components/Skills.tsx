@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import c from './images/C.png';
+import java from './images/java.png';
+import css from './images/css.png';
+import html from './images/html.png';
+import js from './images/javascript.png';
+import mysql from './images/mysql.png';
+import python from './images/python.png';
+import R from './images/R.png';
 
 interface SectionProps {
   title: string;
@@ -40,10 +48,10 @@ const Skills: React.FC = () => {
         <Section 
           title="Programming Languages" 
           skills={[
-            { name: 'Python', logo: '/python.png' }, 
-            { name: 'Java', logo: '/java.png' }, 
-            { name: 'C', logo: '/c.png' }, 
-            { name: 'R', logo: '/r.png' }
+            { name: 'Python', logo: python }, 
+            { name: 'Java', logo: java }, 
+            { name: 'C', logo: c }, 
+            { name: 'R', logo: R }
           ]} 
           isOpen={openSection === 'Programming Languages'} 
           onClick={() => toggleSection('Programming Languages')}
@@ -51,7 +59,7 @@ const Skills: React.FC = () => {
         <Section 
           title="Databases" 
           skills={[
-            { name: 'MySQL', logo: '/mysql.png' }, 
+            { name: 'MySQL', logo: mysql }, 
             { name: 'PostgreSQL', logo: '/postgresql.png' }, 
             { name: 'MongoDB', logo: '/mongodb.png' }
           ]} 
@@ -61,9 +69,9 @@ const Skills: React.FC = () => {
         <Section 
           title="Web Development" 
           skills={[
-            { name: 'HTML', logo: '/html.png' }, 
-            { name: 'CSS', logo: '/css.png' }, 
-            { name: 'JavaScript', logo: '/javascript.png' }, 
+            { name: 'HTML', logo: html}, 
+            { name: 'CSS', logo: css}, 
+            { name: 'JavaScript', logo: js }, 
             { name: 'React', logo: '/react.png' }
           ]} 
           isOpen={openSection === 'Web Development'} 
